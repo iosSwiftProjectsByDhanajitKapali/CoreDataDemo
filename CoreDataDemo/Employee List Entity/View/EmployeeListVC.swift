@@ -23,7 +23,13 @@ class EmployeeListVC: UIViewController {
         employeeListTableView.dataSource = self
         employeeListTableView.register(UINib(nibName: "EmployeeListCell", bundle: nil), forCellReuseIdentifier: "employeeCellId")
         
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
         employees = manager.fetchEmployee()
+        
         if employees != nil && employees?.count != 0{
             employeeListTableView.reloadData()
         }

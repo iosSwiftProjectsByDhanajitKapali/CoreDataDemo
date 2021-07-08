@@ -39,7 +39,7 @@ class CreateEmployeeVC: UIViewController {
             
             let employee = Employee(name: name, email: email, profilePicture: image.pngData(), id: UUID())
             
-            //manager.createEmployee(employee: employee)
+            manager.createEmployee(employee: employee)
             self.performSegue(withIdentifier: SegueIdentifier.navigateToEmployeeList, sender: nil)
         }
     }
