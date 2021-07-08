@@ -9,23 +9,45 @@
 /* Begin PBXBuildFile section */
 		013F95E22694C73900B6CE05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F95E12694C73800B6CE05 /* AppDelegate.swift */; };
 		013F95E42694C73900B6CE05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F95E32694C73900B6CE05 /* SceneDelegate.swift */; };
-		013F95E62694C73900B6CE05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F95E52694C73900B6CE05 /* ViewController.swift */; };
+		013F95E62694C73900B6CE05 /* CreateEmployeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F95E52694C73900B6CE05 /* CreateEmployeeVC.swift */; };
 		013F95E92694C73900B6CE05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013F95E72694C73900B6CE05 /* Main.storyboard */; };
 		013F95EC2694C73900B6CE05 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 013F95EA2694C73900B6CE05 /* CoreDataDemo.xcdatamodeld */; };
 		013F95EE2694C74000B6CE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013F95ED2694C74000B6CE05 /* Assets.xcassets */; };
 		013F95F12694C74000B6CE05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013F95EF2694C74000B6CE05 /* LaunchScreen.storyboard */; };
+		013F95FF2694C8F200B6CE05 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F95FE2694C8F200B6CE05 /* PersistentStorage.swift */; };
+		013F96152695A1FA00B6CE05 /* EmployeeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96142695A1FA00B6CE05 /* EmployeeListVC.swift */; };
+		013F96232695A27000B6CE05 /* EmployeeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96212695A27000B6CE05 /* EmployeeListCell.swift */; };
+		013F96242695A27000B6CE05 /* EmployeeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013F96222695A27000B6CE05 /* EmployeeListCell.xib */; };
+		013F96272695A4B500B6CE05 /* EmployeeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96262695A4B500B6CE05 /* EmployeeDetailVC.swift */; };
+		013F962D2695D0BA00B6CE05 /* CDEmployee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F962B2695D0BA00B6CE05 /* CDEmployee+CoreDataClass.swift */; };
+		013F962E2695D0BA00B6CE05 /* CDEmployee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F962C2695D0BA00B6CE05 /* CDEmployee+CoreDataProperties.swift */; };
+		013F96322695D2D700B6CE05 /* EmployeeDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96312695D2D700B6CE05 /* EmployeeDataRepository.swift */; };
+		013F96362695D32300B6CE05 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96352695D32300B6CE05 /* Employee.swift */; };
+		013F963C2695E1CD00B6CE05 /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F963B2695E1CD00B6CE05 /* EmployeeManager.swift */; };
+		013F96432695E40800B6CE05 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96422695E40800B6CE05 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		013F95DE2694C73800B6CE05 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		013F95E12694C73800B6CE05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		013F95E32694C73900B6CE05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		013F95E52694C73900B6CE05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		013F95E52694C73900B6CE05 /* CreateEmployeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeVC.swift; sourceTree = "<group>"; };
 		013F95E82694C73900B6CE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		013F95EB2694C73900B6CE05 /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
 		013F95ED2694C74000B6CE05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		013F95F02694C74000B6CE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		013F95F22694C74000B6CE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013F95FE2694C8F200B6CE05 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		013F96142695A1FA00B6CE05 /* EmployeeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListVC.swift; sourceTree = "<group>"; };
+		013F96212695A27000B6CE05 /* EmployeeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListCell.swift; sourceTree = "<group>"; };
+		013F96222695A27000B6CE05 /* EmployeeListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeListCell.xib; sourceTree = "<group>"; };
+		013F96262695A4B500B6CE05 /* EmployeeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailVC.swift; sourceTree = "<group>"; };
+		013F962B2695D0BA00B6CE05 /* CDEmployee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		013F962C2695D0BA00B6CE05 /* CDEmployee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		013F96312695D2D700B6CE05 /* EmployeeDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataRepository.swift; sourceTree = "<group>"; };
+		013F96352695D32300B6CE05 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		013F963B2695E1CD00B6CE05 /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
+		013F96422695E40800B6CE05 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +80,131 @@
 		013F95E02694C73800B6CE05 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
-				013F95E12694C73800B6CE05 /* AppDelegate.swift */,
-				013F95E32694C73900B6CE05 /* SceneDelegate.swift */,
-				013F95E52694C73900B6CE05 /* ViewController.swift */,
-				013F95E72694C73900B6CE05 /* Main.storyboard */,
-				013F95ED2694C74000B6CE05 /* Assets.xcassets */,
-				013F95EF2694C74000B6CE05 /* LaunchScreen.storyboard */,
+				013F9605269584F100B6CE05 /* Core Data Support Files */,
+				013F96412695E3F200B6CE05 /* Constants */,
+				013F963A2695E15B00B6CE05 /* Employee Repo Manager */,
+				013F96342695D31300B6CE05 /* Models */,
+				013F96302695D29F00B6CE05 /* Repository */,
+				013F96132695A1CB00B6CE05 /* Employee Detail Entity */,
+				013F96122695A1B500B6CE05 /* Employee List Entity */,
+				013F9603269584B500B6CE05 /* Create Employee Entity */,
+				013F96102695856200B6CE05 /* Resources */,
+				013F960E2695854500B6CE05 /* App Lifecycle */,
 				013F95F22694C74000B6CE05 /* Info.plist */,
 				013F95EA2694C73900B6CE05 /* CoreDataDemo.xcdatamodeld */,
 			);
 			path = CoreDataDemo;
+			sourceTree = "<group>";
+		};
+		013F9603269584B500B6CE05 /* Create Employee Entity */ = {
+			isa = PBXGroup;
+			children = (
+				013F963E2695E36B00B6CE05 /* View */,
+			);
+			path = "Create Employee Entity";
+			sourceTree = "<group>";
+		};
+		013F9605269584F100B6CE05 /* Core Data Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				013F962B2695D0BA00B6CE05 /* CDEmployee+CoreDataClass.swift */,
+				013F962C2695D0BA00B6CE05 /* CDEmployee+CoreDataProperties.swift */,
+				013F95FE2694C8F200B6CE05 /* PersistentStorage.swift */,
+			);
+			path = "Core Data Support Files";
+			sourceTree = "<group>";
+		};
+		013F960E2695854500B6CE05 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				013F95E12694C73800B6CE05 /* AppDelegate.swift */,
+				013F95E32694C73900B6CE05 /* SceneDelegate.swift */,
+			);
+			path = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		013F96102695856200B6CE05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				013F95E72694C73900B6CE05 /* Main.storyboard */,
+				013F95ED2694C74000B6CE05 /* Assets.xcassets */,
+				013F95EF2694C74000B6CE05 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		013F96122695A1B500B6CE05 /* Employee List Entity */ = {
+			isa = PBXGroup;
+			children = (
+				013F96172695A1FF00B6CE05 /* EmplyeeListCell */,
+				013F963F2695E37400B6CE05 /* View */,
+			);
+			path = "Employee List Entity";
+			sourceTree = "<group>";
+		};
+		013F96132695A1CB00B6CE05 /* Employee Detail Entity */ = {
+			isa = PBXGroup;
+			children = (
+				013F96262695A4B500B6CE05 /* EmployeeDetailVC.swift */,
+			);
+			path = "Employee Detail Entity";
+			sourceTree = "<group>";
+		};
+		013F96172695A1FF00B6CE05 /* EmplyeeListCell */ = {
+			isa = PBXGroup;
+			children = (
+				013F96212695A27000B6CE05 /* EmployeeListCell.swift */,
+				013F96222695A27000B6CE05 /* EmployeeListCell.xib */,
+			);
+			path = EmplyeeListCell;
+			sourceTree = "<group>";
+		};
+		013F96302695D29F00B6CE05 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				013F96312695D2D700B6CE05 /* EmployeeDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		013F96342695D31300B6CE05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				013F96352695D32300B6CE05 /* Employee.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		013F963A2695E15B00B6CE05 /* Employee Repo Manager */ = {
+			isa = PBXGroup;
+			children = (
+				013F963B2695E1CD00B6CE05 /* EmployeeManager.swift */,
+			);
+			path = "Employee Repo Manager";
+			sourceTree = "<group>";
+		};
+		013F963E2695E36B00B6CE05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				013F95E52694C73900B6CE05 /* CreateEmployeeVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		013F963F2695E37400B6CE05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				013F96142695A1FA00B6CE05 /* EmployeeListVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		013F96412695E3F200B6CE05 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				013F96422695E40800B6CE05 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				013F95F12694C74000B6CE05 /* LaunchScreen.storyboard in Resources */,
+				013F96242695A27000B6CE05 /* EmployeeListCell.xib in Resources */,
 				013F95EE2694C74000B6CE05 /* Assets.xcassets in Resources */,
 				013F95E92694C73900B6CE05 /* Main.storyboard in Resources */,
 			);
@@ -140,10 +278,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				013F95E62694C73900B6CE05 /* ViewController.swift in Sources */,
+				013F95E62694C73900B6CE05 /* CreateEmployeeVC.swift in Sources */,
+				013F96362695D32300B6CE05 /* Employee.swift in Sources */,
+				013F962D2695D0BA00B6CE05 /* CDEmployee+CoreDataClass.swift in Sources */,
 				013F95EC2694C73900B6CE05 /* CoreDataDemo.xcdatamodeld in Sources */,
 				013F95E22694C73900B6CE05 /* AppDelegate.swift in Sources */,
+				013F962E2695D0BA00B6CE05 /* CDEmployee+CoreDataProperties.swift in Sources */,
+				013F96232695A27000B6CE05 /* EmployeeListCell.swift in Sources */,
+				013F96272695A4B500B6CE05 /* EmployeeDetailVC.swift in Sources */,
+				013F96322695D2D700B6CE05 /* EmployeeDataRepository.swift in Sources */,
+				013F96152695A1FA00B6CE05 /* EmployeeListVC.swift in Sources */,
+				013F963C2695E1CD00B6CE05 /* EmployeeManager.swift in Sources */,
+				013F96432695E40800B6CE05 /* Constants.swift in Sources */,
 				013F95E42694C73900B6CE05 /* SceneDelegate.swift in Sources */,
+				013F95FF2694C8F200B6CE05 /* PersistentStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

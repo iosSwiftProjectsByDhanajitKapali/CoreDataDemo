@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="EmployeeListCell" customModule="CoreDataDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BpF-kD-dV7">
+                        <rect key="frame" x="5" y="4.5" width="110" height="82.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="Enb-nE-ujS"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PyE-Dh-p7t">
+                        <rect key="frame" x="125" y="3" width="190" height="85"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2l-TO-6Bs">
+                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Email ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9z-MT-Jz0">
+                                <rect key="frame" x="0.0" y="45" width="140" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="PyE-Dh-p7t" secondAttribute="bottom" constant="3" id="CWE-Gr-ojp"/>
+                    <constraint firstItem="PyE-Dh-p7t" firstAttribute="leading" secondItem="BpF-kD-dV7" secondAttribute="trailing" constant="10" id="H1f-SD-mBc"/>
+                    <constraint firstItem="BpF-kD-dV7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="TXV-z2-7sZ"/>
+                    <constraint firstItem="BpF-kD-dV7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="VXM-3s-zr1"/>
+                    <constraint firstItem="PyE-Dh-p7t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="Yvg-hm-7Ew"/>
+                    <constraint firstAttribute="bottom" secondItem="BpF-kD-dV7" secondAttribute="bottom" constant="3" id="gcJ-sB-f7J"/>
+                    <constraint firstAttribute="trailing" secondItem="PyE-Dh-p7t" secondAttribute="trailing" constant="5" id="thf-xf-tl9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="employeeEmailid" destination="C9z-MT-Jz0" id="Lnu-QT-MND"/>
+                <outlet property="employeeImage" destination="BpF-kD-dV7" id="CHm-j9-ES5"/>
+                <outlet property="employeeName" destination="v2l-TO-6Bs" id="Opb-cY-kW6"/>
+            </connections>
+            <point key="canvasLocation" x="-514.49275362318849" y="149.66517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+    </resources>
+</document>
