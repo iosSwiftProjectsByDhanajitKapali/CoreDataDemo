@@ -31,4 +31,11 @@ class EmployeeListCell: UITableViewCell {
         self.employeeEmailid.text = employeeEmailid
     }
     
+    
+    override func prepareForReuse() {
+        self.employeeImage.image = nil
+            //UIImage(named: employeeImageName)
+        self.employeeName.text = nil
+        self.employeeEmailid.text = nil
+    }
 }

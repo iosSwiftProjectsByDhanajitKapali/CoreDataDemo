@@ -14,12 +14,21 @@ class CreateEmployeeVC: UIViewController {
     @IBOutlet var employeeNameTextField: UITextField!
     @IBOutlet var employeeEmailidTextField: UITextField!
     
+    private let employeeListButton : UIButton = {
+        let button = UIButton()
+        button.setTitle("Employee List", for: .normal)
+        button.backgroundColor = .red
+        return button
+    }()
     
     private let manager = EmployeeManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        view.addSubview(employeeListButton)
+        employeeListButton.addTarget(self, action: #selector(didTapEmployeeListButton), for: .touchUpInside)
+        
         let tapGesture = UITapGestureRecognizer()
         tapGesture.numberOfTapsRequired = 1
         tapGesture.numberOfTouchesRequired = 1
@@ -27,6 +36,11 @@ class CreateEmployeeVC: UIViewController {
         self.employeeImageView.isUserInteractionEnabled = true
         tapGesture.addTarget(self, action: #selector(selectImage))
 
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        employeeListButton.frame = CGRect(x: (view.frame.width - 250)/2, y: view.frame.height/2 + 200, width: 250, height: 50)
     }
 
     @IBAction func createEmployeeButtonPressed(_ sender: UIButton) {
@@ -50,6 +64,10 @@ class CreateEmployeeVC: UIViewController {
         picker.sourceType = .savedPhotosAlbum
         picker.delegate = self
         present(picker, animated: true)
+    }
+    
+    @objc func didTapEmployeeListButton() {
+        self.performSegue(withIdentifier: SegueIdentifier.navigateToEmployeeList, sender: nil)
     }
     
 }
