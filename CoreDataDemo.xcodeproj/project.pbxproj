@@ -82,12 +82,12 @@
 			children = (
 				013F9605269584F100B6CE05 /* Core Data Support Files */,
 				013F96412695E3F200B6CE05 /* Constants */,
+				013F96302695D29F00B6CE05 /* Repository */,
 				013F963A2695E15B00B6CE05 /* Employee Repo Manager */,
 				013F96342695D31300B6CE05 /* Models */,
-				013F96302695D29F00B6CE05 /* Repository */,
-				013F96132695A1CB00B6CE05 /* Employee Detail Entity */,
-				013F96122695A1B500B6CE05 /* Employee List Entity */,
-				013F9603269584B500B6CE05 /* Create Employee Entity */,
+				013F96132695A1CB00B6CE05 /* Employee Detail */,
+				013F96122695A1B500B6CE05 /* Employee List */,
+				013F9603269584B500B6CE05 /* Create Employee */,
 				013F96102695856200B6CE05 /* Resources */,
 				013F960E2695854500B6CE05 /* App Lifecycle */,
 				013F95F22694C74000B6CE05 /* Info.plist */,
@@ -96,12 +96,12 @@
 			path = CoreDataDemo;
 			sourceTree = "<group>";
 		};
-		013F9603269584B500B6CE05 /* Create Employee Entity */ = {
+		013F9603269584B500B6CE05 /* Create Employee */ = {
 			isa = PBXGroup;
 			children = (
 				013F963E2695E36B00B6CE05 /* View */,
 			);
-			path = "Create Employee Entity";
+			path = "Create Employee";
 			sourceTree = "<group>";
 		};
 		013F9605269584F100B6CE05 /* Core Data Support Files */ = {
@@ -133,21 +133,21 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		013F96122695A1B500B6CE05 /* Employee List Entity */ = {
+		013F96122695A1B500B6CE05 /* Employee List */ = {
 			isa = PBXGroup;
 			children = (
 				013F96172695A1FF00B6CE05 /* EmplyeeListCell */,
 				013F963F2695E37400B6CE05 /* View */,
 			);
-			path = "Employee List Entity";
+			path = "Employee List";
 			sourceTree = "<group>";
 		};
-		013F96132695A1CB00B6CE05 /* Employee Detail Entity */ = {
+		013F96132695A1CB00B6CE05 /* Employee Detail */ = {
 			isa = PBXGroup;
 			children = (
 				013F96262695A4B500B6CE05 /* EmployeeDetailVC.swift */,
 			);
-			path = "Employee Detail Entity";
+			path = "Employee Detail";
 			sourceTree = "<group>";
 		};
 		013F96172695A1FF00B6CE05 /* EmplyeeListCell */ = {
@@ -439,12 +439,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S83TL6GCMZ;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.CoreDataDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhanajitkapali.CoreDataDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,12 +458,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S83TL6GCMZ;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.CoreDataDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhanajitkapali.CoreDataDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
