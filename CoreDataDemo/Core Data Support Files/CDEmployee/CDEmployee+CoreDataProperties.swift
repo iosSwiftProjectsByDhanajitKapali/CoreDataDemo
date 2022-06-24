@@ -2,7 +2,7 @@
 //  CDEmployee+CoreDataProperties.swift
 //  CoreDataDemo
 //
-//  Created by unthinkable-mac-0025 on 07/07/21.
+//  Created by unthinkable-mac-0025 on 24/06/22.
 //
 //
 
@@ -16,11 +16,12 @@ extension CDEmployee {
         return NSFetchRequest<CDEmployee>(entityName: "CDEmployee")
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var email: String?
     @NSManaged public var id: UUID?
+    @NSManaged public var name: String?
     @NSManaged public var profilePic: Data?
-
+    @NSManaged public var toPassport: CDPassport?
+    
     //custom functions
     func convertToEmployee() ->Employee{
         return Employee(name: self.name, email: self.email, profilePicture: self.profilePic, id: self.id!)

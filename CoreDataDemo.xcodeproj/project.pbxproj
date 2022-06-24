@@ -19,12 +19,14 @@
 		013F96232695A27000B6CE05 /* EmployeeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96212695A27000B6CE05 /* EmployeeListCell.swift */; };
 		013F96242695A27000B6CE05 /* EmployeeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013F96222695A27000B6CE05 /* EmployeeListCell.xib */; };
 		013F96272695A4B500B6CE05 /* EmployeeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96262695A4B500B6CE05 /* EmployeeDetailVC.swift */; };
-		013F962D2695D0BA00B6CE05 /* CDEmployee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F962B2695D0BA00B6CE05 /* CDEmployee+CoreDataClass.swift */; };
-		013F962E2695D0BA00B6CE05 /* CDEmployee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F962C2695D0BA00B6CE05 /* CDEmployee+CoreDataProperties.swift */; };
 		013F96322695D2D700B6CE05 /* EmployeeDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96312695D2D700B6CE05 /* EmployeeDataRepository.swift */; };
 		013F96362695D32300B6CE05 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96352695D32300B6CE05 /* Employee.swift */; };
 		013F963C2695E1CD00B6CE05 /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F963B2695E1CD00B6CE05 /* EmployeeManager.swift */; };
 		013F96432695E40800B6CE05 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F96422695E40800B6CE05 /* Constants.swift */; };
+		01CB17482865DCA600FBC702 /* CDPassport+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB17442865DCA600FBC702 /* CDPassport+CoreDataClass.swift */; };
+		01CB17492865DCA600FBC702 /* CDPassport+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB17452865DCA600FBC702 /* CDPassport+CoreDataProperties.swift */; };
+		01CB174A2865DCA600FBC702 /* CDEmployee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB17462865DCA600FBC702 /* CDEmployee+CoreDataClass.swift */; };
+		01CB174B2865DCA600FBC702 /* CDEmployee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB17472865DCA600FBC702 /* CDEmployee+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +44,14 @@
 		013F96212695A27000B6CE05 /* EmployeeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListCell.swift; sourceTree = "<group>"; };
 		013F96222695A27000B6CE05 /* EmployeeListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeListCell.xib; sourceTree = "<group>"; };
 		013F96262695A4B500B6CE05 /* EmployeeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailVC.swift; sourceTree = "<group>"; };
-		013F962B2695D0BA00B6CE05 /* CDEmployee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		013F962C2695D0BA00B6CE05 /* CDEmployee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		013F96312695D2D700B6CE05 /* EmployeeDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataRepository.swift; sourceTree = "<group>"; };
 		013F96352695D32300B6CE05 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		013F963B2695E1CD00B6CE05 /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
 		013F96422695E40800B6CE05 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		01CB17442865DCA600FBC702 /* CDPassport+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPassport+CoreDataClass.swift"; sourceTree = "<group>"; };
+		01CB17452865DCA600FBC702 /* CDPassport+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPassport+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		01CB17462865DCA600FBC702 /* CDEmployee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		01CB17472865DCA600FBC702 /* CDEmployee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +111,8 @@
 		013F9605269584F100B6CE05 /* Core Data Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				013F962B2695D0BA00B6CE05 /* CDEmployee+CoreDataClass.swift */,
-				013F962C2695D0BA00B6CE05 /* CDEmployee+CoreDataProperties.swift */,
+				01CB17432865DAEB00FBC702 /* CDPassport */,
+				01CB17422865DADE00FBC702 /* CDEmployee */,
 				013F95FE2694C8F200B6CE05 /* PersistentStorage.swift */,
 			);
 			path = "Core Data Support Files";
@@ -207,6 +211,24 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		01CB17422865DADE00FBC702 /* CDEmployee */ = {
+			isa = PBXGroup;
+			children = (
+				01CB17462865DCA600FBC702 /* CDEmployee+CoreDataClass.swift */,
+				01CB17472865DCA600FBC702 /* CDEmployee+CoreDataProperties.swift */,
+			);
+			path = CDEmployee;
+			sourceTree = "<group>";
+		};
+		01CB17432865DAEB00FBC702 /* CDPassport */ = {
+			isa = PBXGroup;
+			children = (
+				01CB17442865DCA600FBC702 /* CDPassport+CoreDataClass.swift */,
+				01CB17452865DCA600FBC702 /* CDPassport+CoreDataProperties.swift */,
+			);
+			path = CDPassport;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,20 +300,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01CB174B2865DCA600FBC702 /* CDEmployee+CoreDataProperties.swift in Sources */,
 				013F95E62694C73900B6CE05 /* CreateEmployeeVC.swift in Sources */,
+				01CB174A2865DCA600FBC702 /* CDEmployee+CoreDataClass.swift in Sources */,
 				013F96362695D32300B6CE05 /* Employee.swift in Sources */,
-				013F962D2695D0BA00B6CE05 /* CDEmployee+CoreDataClass.swift in Sources */,
 				013F95EC2694C73900B6CE05 /* CoreDataDemo.xcdatamodeld in Sources */,
 				013F95E22694C73900B6CE05 /* AppDelegate.swift in Sources */,
-				013F962E2695D0BA00B6CE05 /* CDEmployee+CoreDataProperties.swift in Sources */,
 				013F96232695A27000B6CE05 /* EmployeeListCell.swift in Sources */,
 				013F96272695A4B500B6CE05 /* EmployeeDetailVC.swift in Sources */,
 				013F96322695D2D700B6CE05 /* EmployeeDataRepository.swift in Sources */,
 				013F96152695A1FA00B6CE05 /* EmployeeListVC.swift in Sources */,
 				013F963C2695E1CD00B6CE05 /* EmployeeManager.swift in Sources */,
 				013F96432695E40800B6CE05 /* Constants.swift in Sources */,
+				01CB17492865DCA600FBC702 /* CDPassport+CoreDataProperties.swift in Sources */,
 				013F95E42694C73900B6CE05 /* SceneDelegate.swift in Sources */,
 				013F95FF2694C8F200B6CE05 /* PersistentStorage.swift in Sources */,
+				01CB17482865DCA600FBC702 /* CDPassport+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
